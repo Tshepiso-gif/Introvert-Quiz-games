@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, cyan, magenta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .quiz-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    width: 420px;
+    text-align: center;
+  }
+  
+  #question {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #222;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    display: flex;
+  }
+  
+  .option button {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    background: #c5f3f7; /* Light cyan */
+    border: 2px solid #999;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .option button:hover {
+    background: #00838f; /* Darker cyan on hover */
+    color: white;
+    border-color: #004d40;
+    transform: scale(1.03);
+  }
+  
+  .option.correct button {
+    background-color: #4caf50 ;
+    color: white;
+    border-color: #388e3c;
+  }
+  
+  .option.wrong button {
+    background-color: #f44336 ;
+    color: white;
+    border-color: #c62828;
+  }
+  
+  #next {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    background-color: #6a1b9a;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #next:hover {
+    background-color: #4a148c;
+  }
+  
+  #scoreBox {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+  }
+  
